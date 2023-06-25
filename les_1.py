@@ -12,7 +12,7 @@ def strcounter(s):
                 counter += 1  #  c += 1 c = c + 1
         print(sym, '-', counter)
 
-#strcounter('abbbcc') 
+strcounter('aaaabbbcbacb') 
 
 def strcounter2(s):
     syms_counter = {}
@@ -21,4 +21,4 @@ def strcounter2(s):
     
     for sym, count in syms_counter.items():
         print(sym, '-', count)
-strcounter2('aabbbccccccccde')
+strcounter2('dazcczdaczdazdczdaczad')
