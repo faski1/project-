@@ -1,0 +1,30 @@
+h1 {
+    background: green;
+    color: whitesmoke;
+}
+
+.paragraph-1{
+    text-align: center;
+    color: blue;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 2px 3px #09ff00;
+}
+.paragraph-2{
+    border: 10px solid yellow;
+    border-radius: 15px;
+    font-size: 24pt;
+    margin-bottom: 80px;
+    padding-top: 50px;
+}
+.paragraph-3{
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+.paragraph-4{
+    font-size: 25pt;
+    font-family: monospace;
+    color:red;
+    background: orange;
+}
