@@ -1,30 +1,28 @@
 h1 {
-    background: green;
-    color: whitesmoke;
+    background: red;
+    color: white;
 }
 
-.paragraph-1{
-    text-align: center;
-    color: blue;
-    font-size: 24px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 1px 2px 3px #09ff00;
+.paragraph-1 {
+    background: pink;
+    font-size: 32pt;
+    color: greenyellow;
 }
-.paragraph-2{
+.paragraph-2 {
     border: 10px solid yellow;
     border-radius: 15px;
     font-size: 24pt;
-    margin-bottom: 80px;
+    margin-bottom: 60pt;
     padding-top: 50px;
 }
-.paragraph-3{
+.paragraph-3 {
     font-weight: bold;
     font-size: 22pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
 }
-.paragraph-4{
-    font-size: 25pt;
-    font-family: monospace;
-    color:red;
-    background: orange;
+.paragraph-4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 5px 5px green;
 }
