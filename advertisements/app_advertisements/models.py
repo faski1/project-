@@ -37,6 +37,15 @@ class Advertisement(models.Model):
              updated_time
           )
        return self.updated_at.strftime('%d.%m.%Y at %H:%M:%S')
+    
+    @admin.display(description='Изображение')
+    def image_display(self):
+       if self.image:
+          return format_html(
+             '<img src="{}" style="width: 55px;">', self.image.url
+          )
+       else:
+          return 'No Image'
 
 
     def __str__(self) -> str:
