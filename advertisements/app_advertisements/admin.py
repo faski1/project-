@@ -3,7 +3,7 @@ from .models import Advertisement
 from django.db.models.query import QuerySet
 
 class AdvertisementsAdmin(admin.ModelAdmin):
-    list_display = ['id','title','descriptional','price','auction','created_at','created_date']
+    list_display = ['id','title','descriptional','price','auction','created_at','created_date','updated_date']
     list_filter = ['auction','created_at','price']
     actions = ['make_action_as_false','make_action_as_true']
     fieldsets = [
