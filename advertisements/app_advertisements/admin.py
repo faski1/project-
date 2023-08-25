@@ -3,14 +3,14 @@ from .models import Advertisement
 from django.db.models.query import QuerySet
 
 class AdvertisementsAdmin(admin.ModelAdmin):
-    list_display = ['id','title','descriptional','price','auction','created_at','created_date','updated_date']
+    list_display = ['id','user','title','descriptional','price','auction','created_at','created_date','updated_date','image']
     list_filter = ['auction','created_at','price']
     actions = ['make_action_as_false','make_action_as_true']
     fieldsets = [
         (
             'Общие',
             {
-                "fields": ['title','descriptional'],
+                "fields": ['title','descriptional','user', 'image'],
                 "classes": ["collapse"]
             },
         ),
