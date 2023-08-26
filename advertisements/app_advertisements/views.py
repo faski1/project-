@@ -7,10 +7,10 @@ from django.urls import reverse
 def index(request):
     advertisements = Advertisement.objects.all()
     context = {'advertisements' : advertisements}
-    return render(request, 'index.html', context)
+    return render(request, 'app_advertisement/index.html', context)
 
 def top_sellers(request):
-    return render(request, 'top-sellers.html')
+    return render(request, 'app_advertisement/top-sellers.html')
 
 def advertisement_post(request):
     if request.method == 'POST':
@@ -25,16 +25,7 @@ def advertisement_post(request):
         form = AdvertisementForms()
 
     context = {'form' : form}
-    return render(request, 'advertisement-post.html', context)
-
-def register(request):
-    return render(request, 'register.html')
-
-def login(request):
-    return render(request, 'login.html')
-
-def profile(request):
-    return render(request, 'profile.html')
+    return render(request, 'app_advertisement/advertisement-post.html', context)
 
 def advertisement(request):
-    return render(request, 'advertisement.html')
+    return render(request, 'app_advertisement/advertisement.html')
